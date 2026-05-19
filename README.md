@@ -10,9 +10,9 @@
 
 ## Overview
 
-Insider threats — employees who steal data, leak secrets, or sabotage systems — cause an estimated **$16M per incident** on average. Existing detection systems either rely on invasive personality profiling (Big Five questionnaires) or purely on behavioural monitoring logs that are incomplete in many organisations.
+Insider threats — employees who steal data, leak secrets, or sabotage systems, cause an estimated **$16M per incident** on average. Existing detection systems either rely on invasive personality profiling (Big Five questionnaires) or purely on behavioural monitoring logs that are incomplete in many organisations.
 
-This project introduces a **text-based moral language feature set** derived from Moral Foundations Theory (MFT), combined with standard behavioural logs, to classify insider threats from the CMU CERT r4.2 dataset. The key insight: moral language patterns in corporate email — care, fairness, loyalty, authority, sanctity — may reveal psychological shifts preceding malicious activity, without requiring any psychological testing of employees.
+This project introduces a **text-based moral language feature set** derived from Moral Foundations Theory (MFT), combined with standard behavioural logs, to classify insider threats from the CMU CERT r4.2 dataset. The key insight: moral language patterns in corporate email — care, fairness, loyalty, authority, sanctity, may reveal psychological shifts preceding malicious activity, without requiring any psychological testing of employees.
 
 **Key result:** MFT + Behavioural fusion achieves **F1 = 0.851, AUC = 0.943** on a held-out scenario test, matching Big Five-based approaches without any privacy-invasive profiling.
 
