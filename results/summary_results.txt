@@ -1,0 +1,31 @@
+═══════════════════════════════════════════════════════════════════
+  RESULTS SUMMARY — NLP Insider Threat Detection via MFT
+═══════════════════════════════════════════════════════════════════
+
+CMU r4.2 Dataset — 5-fold Stratified Cross-Validation:
+  Model                   Accuracy Precision    Recall        F1   ROC-AUC
+  ---------------------------------------------------------------
+  Random Forest              1.000     1.000     1.000     1.000     1.000  ← BEST
+  SVM (RBF)                  1.000     1.000     1.000     1.000     1.000  ← BEST
+  Gradient Boosting          1.000     1.000     1.000     1.000     1.000  ← BEST
+
+Baseline Comparison (Gradient Boosting on different feature sets):
+  MFT Features       F1=1.000  ROC-AUC=1.000   <- Our contribution
+  TF-IDF Features    F1=0.988  ROC-AUC=0.996
+  Big Five Features  N/A (psychometric.csv not available)
+
+Enron Email Validation (keyword-proxy ground truth):
+  Accuracy: 0.875  Precision: 0.000  Recall: 0.000  F1: 0.000
+
+MFT Ablation Study (F1 drop when foundation removed):
+  -care          ΔF1 = +0.0000
+  -fairness      ΔF1 = +0.0000
+  -loyalty       ΔF1 = +0.0000
+  -authority     ΔF1 = +0.0000
+  -sanctity      ΔF1 = +0.0000
+
+Top 3 features (Gradient Boosting importance):
+  1. authority.vice            0.2631
+  2. fairness.vice             0.2088
+  3. sanctity.vice             0.1716
+═══════════════════════════════════════════════════════════════════

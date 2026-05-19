@@ -1,0 +1,40 @@
+# ── Data files (too large / licensed — download separately per README) ────────
+cmu-dataset/
+enron-email-dataset.zip
+answers.tar.bz2
+*.tar.bz2
+*.zip
+
+# Generated CSVs and binary lexicons
+*.csv
+*.pkl
+*.pickle
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+.env
+
+# ── OS junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Scratch / backup ──────────────────────────────────────────────────────────
+results_backup/
+*.bak
+
+# ── Jupyter checkpoints ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
